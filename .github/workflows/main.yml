@@ -1,4 +1,4 @@
-
+MS_
 
 on: workflow_dispatch
 name: 🚀 Deploy website on push
@@ -15,6 +15,6 @@ jobs:
       with:
         server: ftp.tunitydev.webhosting.be
         username: yannick@tunitydev
-        password: ${{ secrets.FTP_PASSWORD_PULPFICTION }}
+        password: ${{ secrets.YANNICK_PURECMS_SECRET }}
         dry-run: true
         server-dir: ./
