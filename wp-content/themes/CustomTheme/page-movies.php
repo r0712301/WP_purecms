@@ -5,9 +5,11 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 <?php
+$curentPage = get_query_var('paged');
 $args = array(  
     'post_type' => 'movie',
-    'posts_per_page' => '99'
+    'posts_per_page' => '9',
+    'paged' => $curentPage,
 );
 
 $loop = new WP_Query($args);
@@ -37,5 +39,9 @@ endwhile;
 wp_reset_postdata(); // Reset post data after the movies loop
 endif;?>
 </div>
+<?php echo paginate_links(array(
+        'total' => $loop->max_num_pages
+    ));
+    ?>
 </div>
 <?php get_footer(); ?>
