@@ -13,19 +13,7 @@
     <?php wp_head(); ?>
     <title><?php bloginfo('name'); ?><?php wp_title('|', true, 'left'); ?></title>
 </head>
-<style>
-.error-template {padding: 40px 15px;text-align: center;}
-.error-actions {margin-top:15px;margin-bottom:15px;}
-.error-actions .btn { margin-right:10px; }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px; /* Set the fixed height of the footer here */
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
-}
-</style>
+
 <body <?php body_class(); ?>>
 
 <div class="container">
