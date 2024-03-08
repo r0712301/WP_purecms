@@ -21,6 +21,7 @@
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="/movies" class="nav-link">Movies</a></li>
+        <li class="nav-item"><a href="/actors" class="nav-link">Actors</a></li>
         <li class="nav-item"><a href="/genres" class="nav-link">Categories</a></li>
       </ul>
     </header>
