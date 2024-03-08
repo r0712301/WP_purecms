@@ -1,21 +1,23 @@
 
+name: FTP Test
+
 on:
   push:
     branches: [master]
-name: 🚀 Deploy website on push
+
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  deploy:
+    name: 🚀 Deploy website every commit
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v4
-    
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ftp.tunitydev.webhosting.be
-        username: yannick@tunitydev
-        password: ${{ secrets.YANNICK_PURECMS_SECRET }}
-        dry-run: true
-        server-dir: ./
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: 📂 Sync files
+        uses: ./
+        with:
+          server: ftp.tunitydev.webhosting.be
+          username: yannick@tunitydev
+          password: ${{ secrets.YANNICK_PURECMS_SECRET }}
+          dry-run: true
+          server-dir: ./
