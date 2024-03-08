@@ -43,8 +43,8 @@ $argsActor = array(
         <button class="nav-item btn btn-light <?php if(is_page('home')): echo "active"; endif; ?> px-3"><a href="/" type="button" class="nav-link" aria-current="page">Home</a></button>
         <!-- Movies -->
         <div class="btn-group nav-item  px-3">
-          <button type="button" class="btn btn-light <?php if(is_page('movies') || is_single('movie')): echo "active"; endif; ?>"><a href="/movies" class="nav-link">Movies</a></button>
-          <button type="button" class="btn btn-light <?php if(is_page('movies') || is_single('movie')): echo "active"; endif; ?> dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-light <?php if(is_page('movies') || is_singular('movie')): echo "active"; endif; ?>"><a href="/movies" class="nav-link">Movies</a></button>
+          <button type="button" class="btn btn-light <?php if(is_page('movies') || is_singular('movie')): echo "active"; endif; ?> dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
@@ -61,8 +61,8 @@ $argsActor = array(
         </div>
         <!-- Actors -->
         <div class="btn-group nav-item px-3">
-          <button type="button" class="btn btn-light"><a href="/actors" class="nav-link">Actors</a></button>
-          <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-light <?php if(is_page('actors') || is_singular('actor')): echo "active"; endif; ?>"><a href="/actors" class="nav-link">Actors</a></button>
+          <button type="button" class="btn btn-light <?php if(is_page('actors') || is_singular('actor')): echo "active"; endif; ?> dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">
@@ -79,8 +79,8 @@ $argsActor = array(
         </div>
         <!-- Categories -->
         <div class="btn-group nav-item px-3">
-          <button type="button" class="btn btn-light"><a href="/actors" class="nav-link">Categories</a></button>
-          <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn btn-light <?php if(is_page('genres') || is_tax('genre')): echo "active"; endif; ?>"><a href="/genres" class="nav-link">Genres</a></button>
+          <button type="button" class="btn btn-light <?php if(is_page('genres') || is_tax('genre')): echo "active"; endif; ?> dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="visually-hidden">Toggle Dropdown</span>
           </button>
           <ul class="dropdown-menu">

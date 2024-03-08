@@ -38,6 +38,7 @@ if($loop->have_posts()):
 </div>
 <?php 
 endwhile;
+wp_reset_postdata(); // Reset post data after the actors loop
 endif;?>
 </div>
 </div>

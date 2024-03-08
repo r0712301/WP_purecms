@@ -7,7 +7,7 @@
 <?php
 $args = array(  
     'post_type' => 'movie',
-    'posts_per_page' => '5'
+    'posts_per_page' => '99'
 );
 
 $loop = new WP_Query($args);
@@ -34,6 +34,7 @@ $url = get_field('imdb_url');
 </div>
 <?php 
 endwhile;
+wp_reset_postdata(); // Reset post data after the movies loop
 endif;?>
 </div>
 </div>
