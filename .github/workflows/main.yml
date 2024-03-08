@@ -19,5 +19,4 @@ jobs:
           server: ftp.tunitydev.webhosting.be
           username: yannick@tunitydev
           password: ${{ secrets.YANNICK_PURECMS_SECRET }}
-          dry-run: true
-          server-dir: ./
+
