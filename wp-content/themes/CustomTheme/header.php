@@ -54,6 +54,7 @@ $argsActor = array(
             ?>
             <li><a class="dropdown-item" href="<?php the_permalink();?>"><?php echo get_field('title');?></a></li>
             <?php endwhile;
+            wp_reset_postdata(); // Reset post data after the movies loop
             endif;
             ?>
           </ul>
@@ -71,6 +72,7 @@ $argsActor = array(
             ?>
             <li><a class="dropdown-item" href="<?php the_permalink();?>"><?php the_title();?></a></li>
             <?php endwhile;
+            wp_reset_postdata(); // Reset post data after the actors loop
             endif;
             ?>
           </ul>
