@@ -31,8 +31,8 @@ if( $movie_actors ): ?>
 
 
 <!-- Actor items -->
-<?php endif;
-if(get_post_type()=="actor"):
+<?php 
+elseif(get_post_type()=="actor"):
     $f_name = get_field('first_name');
     $l_name = get_field('last_name');
     $full_name = $f_name ." ". $l_name;
