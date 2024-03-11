@@ -39,9 +39,41 @@ endwhile;
 wp_reset_postdata(); // Reset post data after the movies loop
 endif;?>
 </div>
-<?php echo paginate_links(array(
+<?php $links = paginate_links(array(
         'total' => $loop->max_num_pages
     ));
+echo "<hr>";
+    $navigationElements = explode(">\n<", $links);
+
+   if(count($navigationElements) > 2){
+    for($i = 0, $size = count($navigationElements); $i < $size; ++$i):
+      if($size == 0){
+        break;
+      } 
+      elseif($i == 0 && $size > 0){
+            $navigationElements[$i] .= ">";
+        }
+        elseif($i > 0 && $i+1 < $size){
+            $new_item = "<". $navigationElements[$i] . ">";
+            $navigationElements[$i] = $new_item;
+        }
+        elseif($size = $i+1 ){
+            $new_item = "<". $navigationElements[$i];
+            $navigationElements[$i] = $new_item;
+        }
+    endfor;
+  
+    foreach($navigationElements as $element):
+        if(str_contains($element, "span")):
     ?>
+  <button class="btn btn-primary text-white" disabled><?php echo $element?></button>
+  <?php else:?>
+    <button class="btn btn-primary text-white"><?php echo $element?></button>
+    <?php
+  endif;?>
+  
+  <?php endforeach;
+}
+?>
 </div>
 <?php get_footer(); ?>
