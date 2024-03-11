@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/wp-content/themes/CustomTheme/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../../favicons/favicon-16x16.png">
+    <link rel="manifest" href="../../../favicons/site.webmanifest">
+    <link rel="mask-icon" href="../../../favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -95,6 +102,8 @@ $argsActor = array(
             ?>
           </ul>
         </div>
+        <!-- One pager -->
+        <button class="nav-item btn btn-light <?php if(is_page('onepager')): echo "active"; endif; ?> px-3"><a href="/onepager" type="button" class="nav-link" aria-current="page">One pager trail</a></button>
         
       </ul>
     </header>
