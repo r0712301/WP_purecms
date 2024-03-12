@@ -15,9 +15,17 @@ $argsMovie = array(
 <div id="primary" class="content-area">
     <div id="content" class="site-content" role="main">
    
-    <?php acfe_form('review-actor'); ?>
+    <?php acf_form(array(
+        'post_id'       => 'new_post',
+        'id' => 'review-actor',
+        'new_post'      => array(
+            'post_type'     => 'review',
+            'post_status'   => 'draft'
+        ),
+        'submit_value'  => 'Create new event'));
+     ?>
 
     </div><!-- #content -->
 </div><!-- #primary -->
-</div>
+
 <?php get_footer();?>

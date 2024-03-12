@@ -1,3 +1,4 @@
+<?php acf_form_head(); ?>
 <?php get_header(); ?>
 <!-- Movie items -->
 <?php if(get_post_type() == "movie"):?>
@@ -44,6 +45,8 @@ elseif(get_post_type()=="actor"):
     <div class="h-25">
         <img src="<?php echo $p_picture['url']; ?>" alt="<?php $full_name;?>" class="w-25">
     </div>
+    <p>Give a Review</p>
+    <?php acf_form('review-actor') ?>
 </div>
 
 
