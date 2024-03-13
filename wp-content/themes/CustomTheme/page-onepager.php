@@ -1,9 +1,48 @@
 <?php 
-    get_header();
+    get_header('onepager');
 
     ?>
+    <div class="hero pb-0 mt-0">
+        <video id="myVideo" autoplay muted loop plays-inline preload="auto">
+            <source src="/wp-content/themes/CustomTheme/assets/Detail_Ridez_Video.mp4#t=7,70" type="video/mp4">
+        </video>
+        <div class="content align-content-center">
+            <img src="/wp-content/themes/CustomTheme/assets/Detail-ridez-logo.png" alt="Detail Ridez logo">
+            <div>
+                <a href="#"><button id="left" class="btn buttons-over-img" ><i class="bi bi-arrow-down px-1"></i>ONTDEK ONZE DIENSTEN</button></a>
+                <a href="#"><buttonv id="right" class="btn buttons-over-img">MAAK EEN AFSPRAAK</button></a>
+            </div>
+        
+        </div>
+        <div id="under-hero" class="container">
+            <div  class="row mt-4">
+                <div class="col-lg-4">
+                    <h3 class="text-white align-content-center" ><img src="/wp-content/themes/CustomTheme/assets/icons8-dollar-50.png" alt="icon dollar" width="50px" height="50px"> KWALITEIT</h3>
+                    <p class="text-white">Bij ons staat kwaliteit voorop. Elk voertuig wordt behandeld met de hoogste precisie en expertise. Daarnaast wordt elk uitgevoerd werk nauwlettend opgevolgd.</p>
 
-<h1 class="display-1">This is where a One Pager is being built.</h1>
-<?php
-    get_footer();
-?>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="text-white align-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="50px" stroke-width="1.5" viewBox="0 0 24 24" stroke="#FBB041FF" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="m12 3 3 6 6 3-6 3-3 6-3-6-6-3 6-3z"></path></svg>
+                    SERVICE</h3>
+                    <p class="text-white">Klanttevredenheid is onze drijfveer en wij streven enkel naar het perfecte resultaat. Daarom garanderen wij telkens opnieuw een exclusieve service.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="text-white align-content-center"><svg xmlns="http://www.w3.org/2000/svg" height="50px" stroke-width="1.5" viewBox="0 0 24 24" stroke="#FBB041FF" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="4" y="10" width="8" height="11" rx="2"></rect><path d="M6 10V6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4"></path><path d="M15 7h.01"></path><path d="M18 9h.01"></path><path d="M18 5h.01"></path><path d="M21 3h.01"></path><path d="M21 7h.01"></path><path d="M21 11h.01"></path><path d="M10 7h1"></path></svg>
+                    PROFESSIONALITEIT</h3>
+                    <p class="text-white">Met meer dan 20 jaar ervaring staat Detail Ridez in voor de juiste expertise, waardoor onze klanten steeds kunnen vertrouwen op een juiste aanpak en het perfecte eindresultaat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="diensten" class="container my-5">
+        <div>
+            <h2 class="text-white">ONZE DIENSTEN</h2>
+            <hr style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1;">
+        </div>
+        <div>
+            
+        </div>
+        
+    </div>
+
+<?php get_footer('onepager');?>
