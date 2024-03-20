@@ -70,7 +70,7 @@
                 }
                 else{
                     ?>
-                    <img src="<?php echo esc_url($service_image['url']);?>" class="card-img" alt="Some alt text">
+                    <img src="<?php echo esc_url($service_image['url']);?>" class="card-img h-100 w-auto" alt="Some alt text">
                     <?php
                 }
                 ?>
