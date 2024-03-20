@@ -61,11 +61,11 @@
 
         ?>
             <div class="col">
-                <div class="card text-bg-dark h-100">
+                <div class="card text-bg-dark h-100 position-relative">
                 <?php
                 if( strchr(esc_url($service_image['url']), ".io") ){
                     ?>
-                    <img src="/wp-content/themes/CustomTheme/assets/placeholder.webp" class="card-img" alt="Some alt text">
+                    <img src="/wp-content/themes/CustomTheme/assets/placeholder.webp" class="card-img"  alt="Some alt text" >
                     <?php
                 }
                 else{
@@ -75,12 +75,28 @@
                 }
                 ?>
                     
-                    <div class="card-img-overlay">
+                    <div class="card-img-overlay bg-dark" style="--bs-bg-opacity: .8;">
                         <h5 class="card-title text-center" style="margin-top:50%;"><?php the_title(); ?></h5>
                         <!-- <p class="card-text"><?php //echo $service_descr; ?></p> -->
-                        <div class="card-footer" style="margin-top:38%;">
+                        <div class="card-footer " style="margin-top:38%;border-top: 1px solid #FBB042;">
                             <span class="float-start"><small>prijs excl. btw:</small></span>
-                            <span class="float-end"><?php echo $service_cost;?></span>
+                            <?php
+                                if($service_cost){?>
+                                    <span class="float-end">VANAF €<?php echo $service_cost;?></span>
+                                    <?php
+                                }
+                                else{?>
+                                    <span class="float-end">OP AANVRAAG</span>
+                                    <?php
+                                }
+                            ?>
+                            
+                        </div>
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="overlay-title"><?php the_title(); ?></div>
+                                <div class="descr"><?php echo $service_descr;?></div>
+                            </div>
                         </div>
                     </div>
                 </div>
