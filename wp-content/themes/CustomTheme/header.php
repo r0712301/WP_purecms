@@ -103,7 +103,7 @@ $argsActor = array(
           </ul>
         </div>
         <!-- One pager -->
-        <button class="nav-item btn btn-light <?php if(is_page('onepager')): echo "active"; endif; ?> px-3"><a href="/onepager" type="button" class="nav-link" aria-current="page">One pager trail</a></button>
+        <button class="nav-item btn btn-light <?php if(is_page('onepager')): echo "active"; endif; ?> px-3"><a href="/onepager" type="button" class="nav-link" aria-current="page">One pager trial</a></button>
         
       </ul>
     </header>

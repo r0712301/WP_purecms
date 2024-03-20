@@ -39,9 +39,45 @@
             <h2 class="text-white">ONZE DIENSTEN</h2>
             <hr style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1;">
         </div>
-        <div>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <?php
+            $args = array(  
+                'post_type' => 'dienst',
+                'posts_per_page' => '-1',
+                'orderby' => 'title',
+                'order' => 'ASC'
+            );
             
+            $services = new WP_Query($args);
+            
+
+            if($services->have_posts()):
+                while($services->have_posts()): $services->the_post();
+                // $service_name = the_title();
+                $service_descr = get_field('omschrijving');
+                $service_cost = get_field('prijs');
+                $service_image = get_field('afbeelding');
+                
+
+        ?>
+        <div class="col">
+        <div class="card text-bg-dark">
+                <img src="<?php echo esc_url($service_image['url']); ?>" class="card-img h-100" alt="Some alt text">
+                <div class="card-img-overlay">
+                    <h5 class="card-title"><?php the_title(); ?></h5>
+                    <!-- <p class="card-text"><?php //echo $service_descr; ?></p> -->
+                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+                </div>
+            </div>
         </div>
+            
+            <?php 
+                endwhile;
+            endif;
+            ?>
+        </div>
+        
         
     </div>
 
