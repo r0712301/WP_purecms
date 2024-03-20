@@ -39,7 +39,7 @@
             <h2 class="text-white">ONZE DIENSTEN</h2>
             <hr style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1;">
         </div>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
         <?php
             $args = array(  
                 'post_type' => 'dienst',
@@ -60,17 +60,32 @@
                 
 
         ?>
-        <div class="col">
-        <div class="card text-bg-dark">
-                <img src="<?php echo esc_url($service_image['url']); ?>" class="card-img h-100" alt="Some alt text">
-                <div class="card-img-overlay">
-                    <h5 class="card-title"><?php the_title(); ?></h5>
-                    <!-- <p class="card-text"><?php //echo $service_descr; ?></p> -->
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                </div>
+            <div class="col">
+                <div class="card text-bg-dark h-100">
+                <?php
+                if( strchr(esc_url($service_image['url']), ".io") ){
+                    ?>
+                    <img src="/wp-content/themes/CustomTheme/assets/placeholder.webp" class="card-img" alt="Some alt text">
+                    <?php
+                }
+                else{
+                    ?>
+                    <img src="<?php echo esc_url($service_image['url']);?>" class="card-img" alt="Some alt text">
+                    <?php
+                }
+                ?>
+                    
+                    <div class="card-img-overlay">
+                        <h5 class="card-title text-center" style="margin-top:50%;"><?php the_title(); ?></h5>
+                        <!-- <p class="card-text"><?php //echo $service_descr; ?></p> -->
+                        <div class="card-footer" style="margin-top:38%;">
+                            <span class="float-start"><small>prijs excl. btw:</small></span>
+                            <span class="float-end"><?php echo $service_cost;?></span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+        
             
             <?php 
                 endwhile;
