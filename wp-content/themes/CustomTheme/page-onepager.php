@@ -2,8 +2,9 @@
     get_header('onepager');
 
     ?>
+    <div class="bgc">
     <div class="hero pb-0 mt-0">
-        <video id="myVideo" autoplay muted loop plays-inline preload="auto">
+        <video id="myVideo" autoplay muted loop plays-inline>
             <source src="/wp-content/themes/CustomTheme/assets/Detail_Ridez_Video.mp4#t=7,70" type="video/mp4">
         </video>
         <div class="content align-content-center">
@@ -77,7 +78,7 @@
                     
                     <div class="card-img-overlay bg-dark" style="--bs-bg-opacity: .8;">
                         <h5 class="card-title text-center" style="margin-top:50%;"><?php the_title(); ?></h5>
-                        <!-- <p class="card-text"><?php //echo $service_descr; ?></p> -->
+                      
                         <div class="card-footer " style="margin-top:38%;border-top: 1px solid #FBB042;">
                             <span class="float-start"><small>prijs excl. btw:</small></span>
                             <?php
@@ -111,5 +112,5 @@
         
         
     </div>
-
+    </div>
 <?php get_footer('onepager');?>
