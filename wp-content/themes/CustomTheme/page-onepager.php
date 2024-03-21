@@ -2,9 +2,8 @@
     get_header('onepager');
 
     ?>
-    <div class="bgc">
     <div class="hero pb-0 mt-0">
-        <video id="myVideo" autoplay muted loop plays-inline>
+        <video id="myVideo" autoplay muted loop plays-inline preload="auto">
             <source src="/wp-content/themes/CustomTheme/assets/Detail_Ridez_Video.mp4#t=7,70" type="video/mp4">
         </video>
         <div class="content align-content-center">
@@ -78,7 +77,7 @@
                     
                     <div class="card-img-overlay bg-dark" style="--bs-bg-opacity: .8;">
                         <h5 class="card-title text-center" style="margin-top:50%;"><?php the_title(); ?></h5>
-                      
+                        <!-- <p class="card-text"><?php //echo $service_descr; ?></p> -->
                         <div class="card-footer " style="margin-top:38%;border-top: 1px solid #FBB042;">
                             <span class="float-start"><small>prijs excl. btw:</small></span>
                             <?php
@@ -112,5 +111,17 @@
         
         
     </div>
+    
+    <div id="overons" class="container">
+        <div class="float-start overflow-hidden align-items-center" style="height:500px; width: 33%"><img id="overonsimg" src="wp-content/themes/CustomTheme/assets/20231016_145415.jpg" alt=""></div>
+        <div class="float-end" style="width:50%;">
+            <h2 class="text-white text-uppercase">Wie zijn wij</h2>
+            <p class="text-white">Onze zaakvoerder Kurt Waelburgs richtte Detail Ridez op met als doel klanten de service te bieden die ze verdienen. Met meer dan 20 jaar ervaring verzekeren wij een op maat gemaakte behandeling die aansluit bij de unieke noden van elke klant.</p>
+            <div>
+                <p><a class="text-white text-decoration-none text-uppercase" href="mailto:info@detailridez.be"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" stroke="#FBB041FF" fill="none" stroke-linecap="round" stroke-linejoin="round" height="40px" width="40px"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><rect x="3" y="5" width="18" height="14" rx="2"></rect><polyline points="3 7 12 13 21 7"></polyline></svg> info@detailridez.be</a></p>
+                <p><a class="text-white text-decoration-none" href="tel:+32472607368"><svg xmlns="http://www.w3.org/2000/svg" stroke-width="1.5" viewBox="0 0 24 24" stroke="#FBB041FF" fill="none" stroke-linecap="round" stroke-linejoin="round" height="40px" width="40px"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg> +32 472 60 73 68</a></p>
+        </div>
+        </div>
     </div>
+    <hr class=" mb-0 pb-0" style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1; width:100%;">
 <?php get_footer('onepager');?>

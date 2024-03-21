@@ -32,13 +32,14 @@
     //     }
     // }
 </script>
+<script defer src="app.js"></script>
 <style>
     .noblur{
         z-index: 2;
         filter: blur(0px);
     }
 </style>
-<body <?php body_class('bg-dark'); ?> >
+<body>
 <nav id="navbar" class="navbar fixed-top bg-black bg-opacity-75 py-3">
     <div class="container">
         <div class="float-left">
