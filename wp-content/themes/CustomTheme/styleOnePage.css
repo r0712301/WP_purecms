@@ -4,7 +4,7 @@ body{
   background-color: #161616 !important;
 }
 
-.container{
+.mycontainer{
   max-width: fit-content;
   padding-left: 3rem;
   padding-right: 3rem;

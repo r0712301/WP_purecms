@@ -14,7 +14,7 @@
             </div>
         
         </div>
-        <div id="under-hero" class="container">
+        <div id="under-hero" class="mycontainer">
             <div  class="row mt-4">
                 <div class="col-lg-4">
                     <h3 class="text-white align-content-center" ><img src="/wp-content/themes/CustomTheme/assets/icons8-dollar-50.png" alt="icon dollar" width="50px" height="50px"> KWALITEIT</h3>
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <div id="diensten" class="container my-5">
+    <div id="diensten" class="mycontainer my-5">
         <div>
             <h2 class="text-white">ONZE DIENSTEN</h2>
             <hr style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1;">
@@ -112,7 +112,7 @@
         
     </div>
     
-    <div id="overons" class="container">
+    <div id="overons" class="mycontainer">
         <div class="float-start overflow-hidden align-items-center" style="height:500px; width: 33%"><img id="overonsimg" src="wp-content/themes/CustomTheme/assets/20231016_145415.jpg" alt=""></div>
         <div class="float-end" style="width:50%;">
             <h2 class="text-white text-uppercase">Wie zijn wij</h2>
@@ -125,6 +125,6 @@
     </div>
     <hr class=" mb-0 pb-0" style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1; width:100%;">
     <div>
-        
+
     </div>
 <?php get_footer('onepager');?>
