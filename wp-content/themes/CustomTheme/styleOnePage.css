@@ -210,7 +210,59 @@ body{
   transform: translateX(-25%) translateY(-25%);
 }
 
+#overons{
+  padding-bottom: 20px;
+  margin-bottom: 120px;
+}
+
 #overons div h2{
   font-size: 42px;
+  line-height: 46px;
   font-weight: 700;
+}
+
+.hr{
+  margin-top: 120px;
+}
+.videoBannerContainer{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#myVideoBanner {
+  position: relative;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  min-height: auto;
+  z-index: -1;
+  transform: translateY(-400px);
+}
+
+.buttons-over-img#bannerbtn{
+  color: #000;
+  background-color: #FBB042;
+  border: 2px solid #FBB042;
+  border-radius: 0;
+  transition: all 0.25s ease;
+}
+.buttons-over-img#bannerbtn:hover{
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #FBB042;
+  border-radius: 0;
+  transition: all 0.25s ease;
+}
+
+.videoBannerContainer div h2{
+  font-size: 55px;
+  line-height: 61px;
+  font-weight: 700;
+}
+
+.centering{
+  transform: translateY(100%);
+  text-align: center;
 }

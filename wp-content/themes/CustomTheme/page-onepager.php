@@ -113,7 +113,7 @@
     </div>
     
     <div id="overons" class="mycontainer">
-        <div class="float-start overflow-hidden align-items-center" style="height:500px; width: 33%"><img id="overonsimg" src="/wp-content/themes/CustomTheme/assets/20231016_145415.jpg" alt=""></div>
+        <div class="float-start overflow-hidden" style="height:500px; width: 33%; margin-bottom: 120px;"><img id="overonsimg" src="/wp-content/themes/CustomTheme/assets/20231016_145415.jpg" alt=""></div>
         <div class="float-end" style="width:50%;">
             <h2 class="text-white text-uppercase">Wie zijn wij</h2>
             <p class="text-white">Onze zaakvoerder Kurt Waelburgs richtte Detail Ridez op met als doel klanten de service te bieden die ze verdienen. Met meer dan 20 jaar ervaring verzekeren wij een op maat gemaakte behandeling die aansluit bij de unieke noden van elke klant.</p>
@@ -123,8 +123,17 @@
         </div>
         </div>
     </div>
-    <hr class=" mb-0 pb-0" style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1; width:100%;">
-    <div>
-
+    <hr class=" mb-0 pb-0 mt-5 hr" style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1; width:100%;">
+    <div class="videoBannerContainer overflow-hidden" style="max-height: 500px;">
+        <div class="centering">
+            <h2 class="text-white text-uppercase text-center">Wij zorgen voor jouw voertuig</h2>
+            <p class="text-center text-white">Geef je wagen de behandeling die het verdient</p>
+            <a class="text-center" href="#"><button id="bannerbtn" class="btn text-center buttons-over-img">MAAK EEN AFSPRAAK</button></a>
+        </div>
+        <video id="myVideoBanner" autoplay muted loop plays-inline preload="auto">
+            <source src="/wp-content/themes/CustomTheme/assets/car-cleaning.mp4" type="video/mp4">
+        </video>
+        
+        
     </div>
 <?php get_footer('onepager');?>
