@@ -124,4 +124,7 @@
         </div>
     </div>
     <hr class=" mb-0 pb-0" style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1; width:100%;">
+    <div>
+        
+    </div>
 <?php get_footer('onepager');?>
