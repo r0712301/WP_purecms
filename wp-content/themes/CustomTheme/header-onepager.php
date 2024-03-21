@@ -32,7 +32,7 @@
     //     }
     // }
 </script>
-<script defer src="app.js"></script>
+<script defer src="/wp-content/themes/CustomTheme/app.js"></script>
 <style>
     .noblur{
         z-index: 2;

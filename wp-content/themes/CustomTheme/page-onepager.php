@@ -113,7 +113,7 @@
     </div>
     
     <div id="overons" class="mycontainer">
-        <div class="float-start overflow-hidden align-items-center" style="height:500px; width: 33%"><img id="overonsimg" src="wp-content/themes/CustomTheme/assets/20231016_145415.jpg" alt=""></div>
+        <div class="float-start overflow-hidden align-items-center" style="height:500px; width: 33%"><img id="overonsimg" src="/wp-content/themes/CustomTheme/assets/20231016_145415.jpg" alt=""></div>
         <div class="float-end" style="width:50%;">
             <h2 class="text-white text-uppercase">Wie zijn wij</h2>
             <p class="text-white">Onze zaakvoerder Kurt Waelburgs richtte Detail Ridez op met als doel klanten de service te bieden die ze verdienen. Met meer dan 20 jaar ervaring verzekeren wij een op maat gemaakte behandeling die aansluit bij de unieke noden van elke klant.</p>
