@@ -3,7 +3,7 @@
 
     ?>
     <div class="hero pb-0 mt-0">
-        <video id="myVideo" autoplay muted loop plays-inline preload="auto">
+        <video id="myVideo" autoplay muted loop plays-inline>
             <source src="/wp-content/themes/CustomTheme/assets/Detail_Ridez_Video.mp4#t=7,70" type="video/mp4">
         </video>
         <div class="content align-content-center">
@@ -124,16 +124,26 @@
         </div>
     </div>
     <hr class=" mb-0 pb-0 mt-5 hr" style="color: #FBB042; background-color: #FBB042; height: 2px; opacity: 1; width:100%;">
-    <div class="videoBannerContainer overflow-hidden" style="max-height: 500px;">
+    <div class="videoBannerContainer overflow-hidden" style="max-height: 500px; margin-bottom:120px;">
         <div class="centering">
             <h2 class="text-white text-uppercase text-center">Wij zorgen voor jouw voertuig</h2>
             <p class="text-center text-white">Geef je wagen de behandeling die het verdient</p>
             <a class="text-center" href="#"><button id="bannerbtn" class="btn text-center buttons-over-img">MAAK EEN AFSPRAAK</button></a>
         </div>
-        <video id="myVideoBanner" autoplay muted loop plays-inline preload="auto">
+        <video id="myVideoBanner" autoplay muted loop plays-inline>
             <source src="/wp-content/themes/CustomTheme/assets/car-cleaning.mp4" type="video/mp4">
         </video>
         
         
     </div>
+    <div class="mycontainer">
+        <div class="col-lg-4">
+            <div class="split">
+                <div id="split-0"></div>
+                <div id="split-1"></div>
+            </div>
+        </div>
+    </div>
+    
+    
 <?php get_footer('onepager');?>

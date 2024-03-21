@@ -1,6 +1,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/split.js/1.6.0/split.min.js"></script>
     <script>
+        Split(['#split-0', '#split-1'], {
+            minSize: 0,
+            snapOffset: 0,
+        })
         $(window).scroll(function(){
             var scroll = $(window).scrollTop();
             $("#overonsimg").css({

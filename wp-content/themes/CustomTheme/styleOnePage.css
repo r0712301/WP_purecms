@@ -266,3 +266,34 @@ body{
   transform: translateY(100%);
   text-align: center;
 }
+
+.split {
+  display: flex;
+  flex-direction: row;
+  height: 426px;
+  width: 426px;
+}
+
+.gutter {
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background:#FBB042;
+  cursor: col-resize;
+}
+
+#split-0{
+  background-image: url("/wp-content/themes/CustomTheme/assets/placeholder.webp");
+  background-size: contain;
+  background-position: center center;
+  background-attachment:fixed;
+}
+#split-1{
+  background-image: url("/wp-content/themes/CustomTheme/assets/placeholder.webp");
+  background-size:contain;
+  background-position: center center;
+  background-attachment:fixed;
+}
