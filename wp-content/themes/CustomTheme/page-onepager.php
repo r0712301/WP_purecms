@@ -136,14 +136,28 @@
         
         
     </div>
-    <div class="mycontainer">
-        <div class="col-lg-4">
-            <div class="split">
-                <div id="split-0"></div>
-                <div id="split-1"></div>
+    
+        <div class="row justify-content-center" style="width:100vw; padding-right:3%; padding-left:3%;">
+            <div class="col-lg-4 float-start">
+                <div class="split">
+                    <div id="split-0"></div>
+                    <div id="split-1"></div>
+                </div>
+            </div>
+            <div class="col-lg-4" style="padding-left:4%">
+                <div class="split">
+                    <div id="split-2"></div>
+                    <div id="split-3"></div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="split float-end">
+                    <div id="split-4"></div>
+                    <div id="split-5"></div>
+                </div>
             </div>
         </div>
-    </div>
+   
     
     
 <?php get_footer('onepager');?>

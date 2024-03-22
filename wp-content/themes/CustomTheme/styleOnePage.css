@@ -282,18 +282,50 @@ body{
 
 .gutter.gutter-horizontal {
   background:#FBB042;
-  cursor: col-resize;
+  cursor: ew-resize;
 }
 
 #split-0{
-  background-image: url("/wp-content/themes/CustomTheme/assets/placeholder.webp");
-  background-size: contain;
-  background-position: center center;
-  background-attachment:fixed;
+  background-image: url("/wp-content/themes/CustomTheme/assets/Voor_001-square.jpg");
+  background-size: 426px 426px;
+  background-repeat: no-repeat;
+  background-position: bottom left 4%;
+  background-attachment:fixed ;
 }
 #split-1{
-  background-image: url("/wp-content/themes/CustomTheme/assets/placeholder.webp");
-  background-size:contain;
-  background-position: center center;
+  background-image: url("/wp-content/themes/CustomTheme/assets/Na_001-square.png");
+  background-size: 426px 426px;
+  background-repeat: no-repeat;
+  background-position: bottom left 4%;
+  background-attachment:fixed ;
+}
+
+#split-2{
+  background-image: url("/wp-content/themes/CustomTheme/assets/Voor_3-square.jpg");
+  background-size: 426px 426px;
+  background-repeat: no-repeat;
+  background-position: bottom left 48%;
+  background-attachment:fixed;
+}
+#split-3{
+  background-image: url("/wp-content/themes/CustomTheme/assets/Na_3-square.jpg");
+  background-size: 426px 426px;
+  background-repeat: no-repeat;
+  background-position: bottom left 48%;
+  background-attachment:fixed;
+}
+
+#split-4{
+  background-image: url("/wp-content/themes/CustomTheme/assets/Voor_002-scaled-e1695303186371.jpg");
+  background-size: 426px 426px;
+  background-repeat: no-repeat;
+  background-position: bottom right 4%;
+  background-attachment:fixed;
+}
+#split-5{
+  background-image: url("/wp-content/themes/CustomTheme/assets/Na_002-scaled-e1695303208566.jpg");
+  background-size: 426px 426px;
+  background-repeat: no-repeat;
+  background-position: bottom right 4%;
   background-attachment:fixed;
 }
