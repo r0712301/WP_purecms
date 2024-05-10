@@ -137,27 +137,66 @@
         
     </div>
     
-        <div class="row justify-content-center" style="width:100vw; padding-right:3%; padding-left:3%;">
-            <div class="col-lg-4 float-start">
-                <div class="split">
-                    <div id="split-0"></div>
-                    <div id="split-1"></div>
-                </div>
-            </div>
-            <div class="col-lg-4" style="padding-left:4%">
-                <div class="split">
-                    <div id="split-2"></div>
-                    <div id="split-3"></div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="split float-end">
-                    <div id="split-4"></div>
-                    <div id="split-5"></div>
-                </div>
+    <div class="row justify-content-center" style="width:100vw; padding-right:3%; padding-left:3%;">
+        <div class="col-lg-4 float-start">
+            <div class="split">
+                <div id="split-0"></div>
+                <div id="split-1"></div>
             </div>
         </div>
+        <div class="col-lg-4" style="padding-left:4%">
+            <div class="split">
+                <div id="split-2"></div>
+                <div id="split-3"></div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="split float-end">
+                <div id="split-4"></div>
+                <div id="split-5"></div>
+            </div>
+        </div>
+    </div>
    
-    
+    <!-- <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/wp-content/themes/CustomTheme/assets/Na_001-square.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/wp-content/themes/CustomTheme/assets/Na_001-square.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/wp-content/themes/CustomTheme/assets/Na_001-square.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="/wp-content/themes/CustomTheme/assets/Na_001-square.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- </div> -->
     
 <?php get_footer('onepager');?>
