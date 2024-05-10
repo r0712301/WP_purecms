@@ -12,20 +12,6 @@ $argsMovie = array(
 
 ?>
 
-<div id="primary" class="content-area">
-    <div id="content" class="site-content" role="main">
-   
-    <?php acf_form(array(
-        'post_id'       => 'new_post',
-        'id' => 'review-actor',
-        'new_post'      => array(
-            'post_type'     => 'review',
-            'post_status'   => 'draft'
-        ),
-        'submit_value'  => 'Create new event'));
-     ?>
-
-    </div><!-- #content -->
-</div><!-- #primary -->
+<h2>Just created some filler content trying to understand what Wordpress and Custom themes are all about.</h2>
 
 <?php get_footer();?>
